@@ -9,7 +9,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $con->query("UPDATE request SET review='{$_POST['review']}' WHERE id='{$_POST['request_id']}' AND user_id='{$_SESSION['user_id']}'");
 }
 // Получаем все заявки текущего пользователя
-$query = $con->query("SELECT * FROM requests WHERE user_id='{$_SESSION['user_id']}'");
+$query = $con->query("SELECT * FROM request WHERE user_id='{$_SESSION['user_id']}'");
 if(!$query) die('query error: ' . $con->error); // Если ошибка запроса - показываем её
 ?>
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ if(!$query) die('query error: ' . $con->error); // Если ошибка зап�
     <!-- Шапка сайта -->
     <div class="header">
         <div class="nav">
-            <a href="index.php" class="logo">Корочки.есть</a>    
+            <a href="index.php" class="logo">Пассажиры.РФ</a>    
             <!-- Меню навигации -->
             <div class="nav-buttons">
                 <a href="history.php" class="btn-active">Мои заявки</a>

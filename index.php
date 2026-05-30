@@ -47,15 +47,15 @@ session_start();
     <div class="text">Слайд 1</div>
   </div>
   <div class="mySlides fade">
-    <img src="foto 2.jpg" style="width:100%">
+    <img src="foto 2.png" style="width:100%">
     <div class="text">Слайд 2</div>
   </div>
   <div class="mySlides fade">
-    <img src="foto 3.jpg" style="width:100%">
+    <img src="foto 3.png" style="width:100%">
     <div class="text">Слайд 3</div>
   </div>
   <div class="mySlides fade">
-    <img src="foto 4.jpg" style="width:100%">
+    <img src="foto 4.png" style="width:100%">
     <div class="text">Слайд 4</div>
   </div>
   
